@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+
+# Cython
+*.c
+*.so
+
+# Build
+build/
+dist/
+*.egg-info/
+
+# Environnement
+.env/
+venv/
+.env.*
+
+# Logs
+*.log
+*.direnv/
+*.venv/
