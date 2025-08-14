@@ -2,7 +2,7 @@
 
 from .main import *
 try:
-    from .extremum import cy_extremum_v3
+    from cythonpackage.extremum import cy_extremum_v3
 except ImportError:
     cy_extremum_v3 = None
 __all__ = ['cy_extremum_v3', 'main']

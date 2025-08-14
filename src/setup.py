@@ -6,7 +6,7 @@ import numpy
 extensions = [
     Extension(
         name="cythonpackage.extremum",
-        sources=["src/cythonpackage/extremum.pyx"],
+        sources=["src/cythonpackage/cy_extremum_v3.pyx"],
         include_dirs=[numpy.get_include()],
     )
 ]

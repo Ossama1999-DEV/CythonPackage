@@ -4,7 +4,6 @@ import time
 import sys
 import os
 
-import cythonpackage.extremum
 from .extremum import cy_extremum_v3, py_extremum
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
