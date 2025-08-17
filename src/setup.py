@@ -1,6 +1,5 @@
-from setuptools import setup
-from setuptools.extension import Extension
-from Cython.Build import cythonize
+from setuptools import setup, Extension, find_packages
+import cython
 import numpy
 
 extensions = [
@@ -14,7 +13,15 @@ extensions = [
 setup(
     name="cythonpackage",
     version="0.1",
-    packages=["cythonpackage"],
+    author="DBBIH Oussama",
     package_dir={"": "src"},
-    ext_modules=cythonize(extensions),
+    packages=find_packages(where="src"),
+    ext_modules=cythonize(extensions),   # ← il manquait ça
+    install_requires=[
+        "pandas",
+        "click",
+        "cython",
+        "numpy"
+    ],
+    python_requires=">=3.7",
 )
